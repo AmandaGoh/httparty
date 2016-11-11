@@ -1,0 +1,12 @@
+<h1>Search Results here</h1>
+
+
+<ul>
+  <% @search['Search'].each do |result| %>
+  <li><%= result['Title'] %> <br />
+      <%= image_tag result['Poster']%>
+  </li>
+
+
+  <% end %>
+</ul>

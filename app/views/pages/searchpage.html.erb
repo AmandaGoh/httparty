@@ -1,0 +1,10 @@
+<h2>Ajax Search</h2>
+
+<!-- remote true tells form to send an AJAX request -->
+<div id="searchform">
+  <%= form_tag searchpost_path, method: :post, remote: true do %>
+  <%= label_tag(:q, "Search for:") %>
+  <%= text_field_tag(:q) %>
+  <%= submit_tag "Search" %>
+  <% end %>
+</div>
